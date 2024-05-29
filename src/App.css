@@ -1,0 +1,113 @@
+
+/* .canvas{
+  background-color: black;
+} */
+
+
+
+
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  background-color: #004494;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+}
+
+
+.main{
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+}
+
+#canvas-container {
+  position: relative; /* Set relative positioning as baseline for absolute children */
+  width: 100%; /* Adjust width as necessary */
+  height: 100vh; /* Adjust height as necessary */
+}
+
+.button-container {
+  position: absolute; /* Positioning relative to #canvas-container */
+  top: 10px; /* Distance from the top of the container */
+  right: 10px; /* Distance from the right of the container */
+  z-index: 100; /* Ensure it's above the canvas */
+}
+
+.custom-button {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.custom-button img {
+  vertical-align: middle; /* Aligns the icon with the text */
+  margin-right: 8px;
+}
+
+.custom-button span {
+  vertical-align: middle; /* Ensures text aligns with icons */
+}
+
+
+
+
+
+
+.button-container {
+  position: absolute; /* or relative, based on your layout needs */
+  top: 10px;
+  /* right: 10px; */
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add some space between buttons */
+}
+
+.custom-button {
+  background-color: #ffffff; /* White background */
+  border: 1px solid ; /* Light gray border */
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Space between icon and text */
+  width: 50px; /* Adjust width as needed */
+  margin-left: 100px;
+  margin-right: 60px;
+}
+
+.custom-button span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #e8e8e8; /* Light gray background on hover */
+}
+
+.custom-button:active {
+  background-color: #d0d0d0; /* Darker gray background on active */
+}
